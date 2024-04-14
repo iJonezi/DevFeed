@@ -1,0 +1,112 @@
+/* Splash Modification */
+
+section {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+#welcome-splashpage {
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.section__pic-container {
+    display: flex;
+    width: 40rem;
+}
+
+.splashpage-intro-text, p, h1{
+    align-self: center;
+    text-align: center;
+}
+
+.splashpage-intro-text {
+    margin-right: 200px;
+    margin-bottom: 200px;
+    font-weight: 600;
+    width: 30vw;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.btn {
+    font-weight: 600;
+    transform: all 300ms ease;
+    padding: 1rem;
+    width: 10rem;
+    border-radius: 4rem;
+    background-color: rgba(128, 0, 128, 0.164);
+    color: white;
+}
+
+.btn-color-1 {
+    border: rgba(128, 0, 128, 0.164) 0.2rem solid;
+    font-weight: 600;
+    color: rgb(153, 148, 218);
+    animation: btn-out 3s backwards;
+}
+
+.btn-color-1:hover {
+    cursor: pointer;
+    animation: btn-in 3s forwards; 
+}
+
+.btn-color-1:hover {
+    background-color: rgba(128, 0, 128, 0.425);
+}
+
+.btn-container {
+    padding-top: 1rem;
+    gap: 1rem;
+}
+
+/* Astronaut Image Modification */ 
+.circleimg {
+    border-radius: 100%;
+    margin-left: 100px;
+    box-shadow: 0 0 8px 8px purple inset;
+    margin-bottom: 2rem;
+    animation: pulse 10s infinite;
+    z-index: -101;
+}
+
+.circleimg img {
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.5);
+    }
+    50% {
+        transform: scale(0.55);
+    }
+    100% {
+        transform: scale(0.5);
+    }
+}
+
+@keyframes btn-in {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes btn-out {
+    0% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
