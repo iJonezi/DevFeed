@@ -165,15 +165,19 @@ nav, .nav-links {
 }
 
 nav {
-    justify-content: space-around;
-    align-items: center;
-    height: 17vh;
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
 }
 
 .nav-links {
-    gap: 2rem;
-    list-style: none;
-    font-size: 1.5rem;
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+.nav-links li {
+  cursor: pointer;
 }
 
 a {
@@ -186,6 +190,12 @@ a:hover {
   text-decoration: underline;
   text-underline-offset: 1rem;
   text-decoration-color: rgba(153, 148, 218, 100);
+}
+
+a:active {
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  color: rgb(85, 78, 195);
 }
 
 .logo_img {

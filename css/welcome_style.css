@@ -66,6 +66,7 @@ section {
     gap: 1rem;
 }
 
+
 /* Astronaut Image Modification */ 
 .circleimg {
     border-radius: 100%;
@@ -108,5 +109,27 @@ section {
     }
     100% {
         transform: scale(1);
+    }
+}
+/* Login and Register Page */
+
+.login-hide {
+    animation: fadeaway;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.login-show {
+    animation: fadeaway;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes fadeaway {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }
